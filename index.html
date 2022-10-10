@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <main>
+        <div id="formulario">
+            <form action="">
+                <div>
+                    <label for="anoNasc">Ano de nascimento:</label>
+                    <input type="number" name="anoNasc" id="anoNasc" max="2022" min="1900" value="1900" required>
+                </div>
+
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" id="sexom" value="M" checked><label for="sexom">Masculino</label>
+                    <input type="radio" name="sexo" id="sexof" value="F"><label for="sexof">Feminino</label>
+                </div>
+
+                <input type="button" value="Enviar" onclick="verificar()">
+            </form>
+        </div>
+
+        <div id="resultado">
+            <p><strong>Preencha os dados acima para ver o resultado!</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        <p><small>&copy; Kamila Guerra</small></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
